@@ -30,3 +30,8 @@ exports.getTourByIdService = async (id) => {
 
   return tour;
 };
+
+// add tour
+exports.addTourService = async (tourData) => {
+  const addedTour = await Tour.save(tourData);
+};

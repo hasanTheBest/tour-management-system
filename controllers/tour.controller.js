@@ -65,10 +65,32 @@ exports.getTourById = async (req, res, next) => {
 
   try {
     const tour = await getTourByIdService(tourId);
+
+    res.status(200).json({
+      status: "success",
+      data: tour,
+    });
   } catch (error) {
     res.status(400).json({
       status: "failed",
       message: "An error occurred",
+      error: error.message,
+    });
+  }
+};
+
+// Add a tour
+exports.addTour = async (req, res, next) => {
+  try {
+    const addedResult = await addTourService(req.body);
+    res.status(200).json({
+      status: "success",
+      data: addedResult,
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "failed",
+      message: "Can not add tour",
       error: error.message,
     });
   }
