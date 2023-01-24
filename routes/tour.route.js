@@ -14,6 +14,6 @@ router.route("/trending").get(tourController.getTrendingTours);
 router.route("/cheapest").get(tourController.getCheapestTours);
 
 // get a specific tour by id
-router.route("/:id").get(tourController.getTourById);
+router.route("/:tourId").get(tourController.getTourById);
 
 module.exports = router;

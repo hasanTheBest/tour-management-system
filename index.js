@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const { default: mongoose } = require("mongoose");
+const { mongoose } = require("mongoose");
 const dotenv = require("dotenv").config();
 
 // imports
@@ -18,9 +18,9 @@ app.use(cors());
 app.use("/api/v1/tour", tourRoute);
 
 // database connection
-// mongoose.connect(process.env.DB_LOCAL).then(() => {
-//   console.log("Database connection is established.");
-// });
+mongoose.connect(process.env.DB_LOCAL).then(() => {
+  console.log("Database connection is established.");
+});
 
 // Server testing
 app.listen(PORT, () => {

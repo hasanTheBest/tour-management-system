@@ -2,7 +2,9 @@ const Tour = require("../models/Tours");
 
 // all tours
 exports.getAllToursService = async () => {
-  const tours = await Tour.find();
+  const tours = await Tour.find({});
+
+  // console.log("toursService", tours);
 
   return tours;
 };
@@ -22,8 +24,9 @@ exports.getCheapestToursService = async () => {
 };
 
 // get tour by id
-exports.getTourService = async (id) => {
-  const tour = await Tour.findOne(id);
+exports.getTourByIdService = async (id) => {
+  console.log("tourID", id);
+  const tour = await Tour.findById(id);
 
   return tour;
 };
