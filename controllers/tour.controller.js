@@ -3,6 +3,7 @@ const {
   getTrendingToursService,
   getCheapestToursService,
   getTourByIdService,
+  addTourService,
 } = require("../services/tour.service");
 
 // Get all tours

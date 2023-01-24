@@ -1,19 +1,39 @@
 const mongoose = require("mongoose");
 
-// schema for model
-const tourSchema = mongoose.Schema({
-  PackageName: String,
-  PackageType: String,
-  PackageLocation: String,
-  PackagePrice: String,
-  PackageFeatures: String,
-  PackageDetails: String,
-  PackageImage: String,
-  CreationDate: String,
-  UpdationDate: String,
+const TourPackageSchema = new mongoose.Schema({
+  packageName: {
+    type: String,
+    required: true,
+  },
+  packageType: {
+    type: String,
+  },
+  packageLocation: {
+    type: String,
+    required: true,
+  },
+  packagePrice: {
+    type: String,
+    required: true,
+  },
+  packageFeatures: {
+    type: [String],
+    required: true,
+  },
+  packageDetails: {
+    type: String,
+  },
+  packageImage: {
+    type: String,
+  },
+  creationDate: {
+    type: Date,
+  },
+  updationDate: {
+    type: Date,
+  },
 });
 
-// create model
-const Tour = mongoose.model("Tour", tourSchema);
+const TourPackage = mongoose.model("TourPackage", TourPackageSchema);
 
-module.exports = Tour;
+module.exports = TourPackage;

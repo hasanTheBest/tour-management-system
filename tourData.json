@@ -1,0 +1,118 @@
+[
+  {
+    "packageName": "Amazon Rainforest Expedition",
+    "packageType": "Adventure",
+    "packageLocation": "Amazon Rainforest, Brazil",
+    "packagePrice": "$1,499",
+    "packageFeatures": ["7-day guided tour", "Jungle trekking and canoeing", "All meals and accommodations provided"],
+    "packageDetails": "Explore the depths of the Amazon Rainforest on this 7-day guided expedition. Experience jungle trekking and canoeing while being provided with all necessary equipment and meals. Accommodations are also included in the package.",
+    "packageImage": "https://www.example.com/amazon-rainforest-expedition.jpg",
+    "creationDate": "2022-08-01T12:00:00.000Z",
+    "updationDate": "2022-08-15T14:00:00.000Z"
+    },
+    
+    {
+    "packageName": "Safari in Tanzania",
+    "packageType": "Wildlife",
+    "packageLocation": "Tanzania, Africa",
+    "packagePrice": "$2,499",
+    "packageFeatures": ["14-day guided tour", "Game drives and camping safari", "All meals and accommodations provided"],
+    "packageDetails": "Experience the wilds of Tanzania on this 14-day guided safari. Enjoy game drives and camping while being provided with all necessary equipment and meals. Accommodations are also included in the package.",
+    "packageImage": "https://www.example.com/safari-in-tanzania.jpg",
+    "creationDate": "2022-09-01T12:00:00.000Z",
+    "updationDate": "2022-09-15T14:00:00.000Z"
+    },
+    
+    {
+    "packageName": "Maldives Island Hopping",
+    "packageType": "Beach",
+    "packageLocation": "Maldives",
+    "packagePrice": "$1,799",
+    "packageFeatures": ["7-day island hopping tour", "Snorkeling and diving", "All meals and accommodations provided"],
+    "packageDetails": "Explore the beautiful Maldives on this 7-day island hopping tour. Enjoy snorkeling and diving in the crystal clear waters while being provided with all necessary equipment and meals. Accommodations are also included in the package.",
+    "packageImage": "https://www.example.com/maldives-island-hopping.jpg",
+    "creationDate": "2022-10-01T12:00:00.000Z",
+    "updationDate": "2022-10-15T14:00:00.000Z"
+    }, 
+    {
+      "packageName": "Cultural Tour of Japan",
+      "packageType": "Cultural",
+      "packageLocation": "Japan",
+      "packagePrice": "$3,999",
+      "packageFeatures": ["14-day guided tour", "Visit traditional temples and gardens", "All meals and accommodations provided"],
+      "packageDetails": "Experience the rich culture of Japan on this 14-day guided tour. Visit traditional temples and gardens and learn about the history and customs of the country. All meals and accommodations are also included in the package.",
+      "packageImage": "https://www.example.com/cultural-tour-of-japan.jpg",
+      "creationDate": "2022-11-01T12:00:00.000Z",
+      "updationDate": "2022-11-15T14:00:00.000Z"
+      },
+      
+      {
+      "packageName": "Antarctic Expedition",
+      "packageType": "Adventure",
+      "packageLocation": "Antarctica",
+      "packagePrice": "$5,999",
+      "packageFeatures": ["21-day guided tour", "Visit research stations and wildlife", "All meals and accommodations provided"],
+      "packageDetails": "Explore the vast and remote wilderness of Antarctica on this 21-day guided tour. Visit research stations and observe the unique wildlife of the continent. All meals and accommodations are also included in the package.",
+      "packageImage": "https://www.example.com/antarctic-expedition.jpg",
+      "creationDate": "2022-12-01T12:00:00.000Z",
+      "updationDate": "2022-12-15T14:00:00.000Z"
+      },
+      {
+        "packageName": "Alaska Wilderness Adventure",
+        "packageType": "Outdoor",
+        "packageLocation": "Alaska, USA",
+        "packagePrice": "$1,999",
+        "packageFeatures": ["7-day guided tour", "Hiking, camping, and fishing", "All meals and accommodations provided"],
+        "packageDetails": "Experience the rugged beauty of Alaska on this 7-day guided wilderness adventure. Enjoy hiking, camping, and fishing while being provided with all necessary equipment and meals. Accommodations are also included in the package.",
+        "packageImage": "https://www.example.com/alaska-wilderness-adventure.jpg",
+        "creationDate": "2023-01-01T12:00:00.000Z",
+        "updationDate": "2023-01-15T14:00:00.000Z"
+        },
+        
+        {
+        "packageName": "Mediterranean Cruise",
+        "packageType": "Cruise",
+        "packageLocation": "Mediterranean Sea",
+        "packagePrice": "$3,499",
+        "packageFeatures": ["14-day cruise", "Visit multiple ports and islands", "All meals and accommodations provided"],
+        "packageDetails": "Experience the beauty and culture of the Mediterranean on this 14-day cruise. Visit multiple ports and islands, and enjoy all the amenities of the ship. All meals and accommodations are also included in the package.",
+        "packageImage": "https://www.example.com/mediterranean-cruise.jpg",
+        "creationDate": "2023-02-01T12:00:00.000Z",
+        "updationDate": "2023-02-15T14:00:00.000Z"
+        },
+        
+        {
+        "packageName": "New Zealand Adventure",
+        "packageType": "Outdoor",
+        "packageLocation": "New Zealand",
+        "packagePrice": "$2,499",
+        "packageFeatures": ["14-day guided tour", "Hiking, bungee jumping, and skydiving", "All meals and accommodations provided"],
+        "packageDetails": "Experience the thrill of New Zealand on this 14-day guided adventure. Enjoy hiking, bungee jumping, and skydiving while being provided with all necessary equipment and meals. Accommodations are also included in the package.",
+        "packageImage": "https://www.example.com/new-zealand-adventure.jpg",
+        "creationDate": "2023-03-01T12:00:00.000Z",
+        "updationDate": "2023-03-15T14:00:00.000Z"
+        },
+        {
+          "packageName": "Peruvian Amazon Rainforest Adventure",
+          "packageType": "Adventure",
+          "packageLocation": "Peruvian Amazon Rainforest, Peru",
+          "packagePrice": "$1,999",
+          "packageFeatures": ["7-day guided tour", "Jungle trekking and canoeing", "All meals and accommodations provided"],
+          "packageDetails": "Explore the depths of the Peruvian Amazon Rainforest on this 7-day guided adventure. Experience jungle trekking and canoeing while being provided with all necessary equipment and meals. Accommodations are also included in the package.",
+          "packageImage": "https://www.example.com/peruvian-amazon-rainforest-adventure.jpg",
+          "creationDate": "2023-04-01T12:00:00.000Z",
+          "updationDate": "2023-04-15T14:00:00.000Z"
+          },
+          
+          {
+          "packageName": "Galapagos Islands Wildlife Safari",
+          "packageType": "Wildlife",
+          "packageLocation": "Galapagos Islands, Ecuador",
+          "packagePrice": "$3,999",
+          "packageFeatures": ["14-day guided tour", "Island hopping and wildlife watching", "All meals and accommodations provided"],
+          "packageDetails": "Experience the unique wildlife of the Galapagos Islands on this 14-day guided safari. Enjoy island hopping and observing the diverse species while being provided with all necessary equipment and meals. Accommodations are also included in the package.",
+          "packageImage": "https://www.example.com/galapagos-islands-wildlife-safari.jpg",
+          "creationDate": "2023-05-01T12:00:00.000Z",
+          "updationDate": "2023-05-15T14:00:00.000Z"
+          }
+]

@@ -1,8 +1,8 @@
-const Tour = require("../models/Tours");
+const TourPackage = require("../models/Tours");
 
 // all tours
 exports.getAllToursService = async () => {
-  const tours = await Tour.find({});
+  const tours = await TourPackage.find({});
 
   // console.log("toursService", tours);
 
@@ -11,27 +11,32 @@ exports.getAllToursService = async () => {
 
 // trending tours
 exports.getTrendingToursService = async () => {
-  const trending = await Tour.find();
+  const trending = await TourPackage.find();
 
   return trending;
 };
 
 // cheapest tours
 exports.getCheapestToursService = async () => {
-  const cheapest = await Tour.find();
+  const cheapest = await TourPackage.find({});
 
   return cheapest;
 };
 
 // get tour by id
 exports.getTourByIdService = async (id) => {
-  console.log("tourID", id);
-  const tour = await Tour.findById(id);
+  const tour = await TourPackage.findById(id);
 
   return tour;
 };
 
 // add tour
 exports.addTourService = async (tourData) => {
-  const addedTour = await Tour.save(tourData);
+  // console.log("tourData", tourData);
+  const tourPackage = new TourPackage(tourData);
+
+  // save
+  await tourPackage.save();
+
+  return tourPackage;
 };
