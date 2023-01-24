@@ -16,4 +16,7 @@ router.route("/cheapest").get(tourController.getCheapestTours);
 // get a specific tour by id
 router.route("/:tourId").get(tourController.getTourById);
 
+// post a tour
+router.route("/add").put(tourController.addTour);
+
 module.exports = router;
