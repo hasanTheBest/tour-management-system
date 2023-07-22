@@ -5,7 +5,7 @@ const router = express.Router();
 const tourController = require("../controllers/tour.controller");
 
 // get all tours
-router.route("/all").get(tourController.getAllTours);
+router.route("/tours").get(tourController.getAllTours);
 
 // get trending tours
 router.route("/trending").get(tourController.getTrendingTours);

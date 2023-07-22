@@ -1,3 +1,4 @@
+const { query } = require("express");
 const {
   getAllToursService,
   getTrendingToursService,
@@ -9,7 +10,34 @@ const {
 // Get all tours
 exports.getAllTours = async (req, res, next) => {
   try {
-    const tours = await getAllToursService();
+    const { fields, sort, limit, page } = req.query;
+
+    const filterQuery = { ...req.query };
+    const excludesFiled = ["fields", "sort", "limit", "page"];
+
+    excludesFiled.forEach((property) => {
+      delete filterQuery[property];
+    });
+
+    let queries = {};
+
+    if (fields) {
+      queries.selectFields = fields.split(",").join(" ");
+    }
+
+    if (sort) {
+      queries.sortBy = sort.split(",").join(" ");
+    }
+
+    if (limit) {
+      queries.limit = limit;
+    }
+
+    if (page) {
+      queries.page = page;
+    }
+
+    const tours = await getAllToursService(filterQuery, queries);
 
     res.status(200).json({
       status: "success",

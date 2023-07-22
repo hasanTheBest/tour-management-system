@@ -1,7 +1,7 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
 const { mongoose } = require("mongoose");
+const app = express();
 const dotenv = require("dotenv").config();
 
 // imports
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 // Routes
-app.use("/api/v1/tour", tourRoute);
+app.use("/api/v1", tourRoute);
 
 // database connection
 mongoose.connect(process.env.DB_LOCAL).then(() => {

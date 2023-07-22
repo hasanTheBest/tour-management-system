@@ -1,10 +1,16 @@
 const TourPackage = require("../models/Tours");
 
 // all tours
-exports.getAllToursService = async () => {
-  const tours = await TourPackage.find({});
+exports.getAllToursService = async (
+  filterQuery,
+  { selectFields, limit, page, sortBy }
+) => {
+  const tours = await TourPackage.find(filterQuery)
+    .select(selectFields)
+    .sort(sortBy)
+    .limit(limit);
 
-  // console.log("toursService", tours);
+  console.log("selectedFiled", selectFields);
 
   return tours;
 };
