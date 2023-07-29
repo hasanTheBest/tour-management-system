@@ -32,6 +32,9 @@ const TourPackageSchema = new mongoose.Schema({
   updationDate: {
     type: Date,
   },
+  packageViewCount: {
+    type: Number,
+  },
 });
 
 const TourPackage = mongoose.model("TourPackage", TourPackageSchema);

@@ -5,6 +5,7 @@ const {
   getCheapestToursService,
   getTourByIdService,
   addTourService,
+  updateTourByIdService,
 } = require("../services/tour.service");
 
 // Get all tours
@@ -104,6 +105,26 @@ exports.getTourById = async (req, res, next) => {
     res.status(400).json({
       status: "failed",
       message: "An error occurred",
+      error: error.message,
+    });
+  }
+};
+
+// Update tour by id
+exports.updateTourById = async (req, res, next) => {
+  try {
+    const updatedResult = await updateTourByIdService(
+      req.params.tourId,
+      req.body
+    );
+    res.status(200).json({
+      status: "success",
+      data: updatedResult,
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: "failed",
+      message: "Can not add tour",
       error: error.message,
     });
   }
