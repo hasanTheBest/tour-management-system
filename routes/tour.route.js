@@ -11,12 +11,12 @@ router.route("/tours").get(tourController.getAllTours);
 router.route("/trending").get(tourController.getTrendingTours);
 
 // get cheapest tours
-router.route("/cheapest").get(tourController.getCheapestTours);
-
-// get a specific tour by id
-router.route("/:tourId").get(tourController.getTourById);
+router.route("/tours/cheapest").get(tourController.getCheapestTours);
 
 // post a tour
 router.route("/add").post(tourController.addTour);
+
+// get a specific tour by id
+router.route("/:tourId").get(tourController.getTourById);
 
 module.exports = router;

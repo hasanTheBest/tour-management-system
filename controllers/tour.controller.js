@@ -72,6 +72,7 @@ exports.getTrendingTours = async (req, res, next) => {
 
 // Get cheapest tours
 exports.getCheapestTours = async (req, res, next) => {
+  console.log("Cheapest Tour controller");
   try {
     const cheapest = await getCheapestToursService();
 

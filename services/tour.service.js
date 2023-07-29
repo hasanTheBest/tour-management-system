@@ -10,7 +10,7 @@ exports.getAllToursService = async (
     .sort(sortBy)
     .limit(limit);
 
-  console.log("selectedFiled", selectFields);
+  // console.log("selectedFiled", selectFields);
 
   return tours;
 };
@@ -24,7 +24,7 @@ exports.getTrendingToursService = async () => {
 
 // cheapest tours
 exports.getCheapestToursService = async () => {
-  const cheapest = await TourPackage.find({});
+  const cheapest = await TourPackage.find({}).sort("packagePrice").limit(4);
 
   return cheapest;
 };
