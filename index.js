@@ -18,7 +18,8 @@ app.use(cors());
 app.use("/api/v1", tourRoute);
 
 // database connection
-mongoose.connect(process.env.DB_LOCAL).then(() => {
+// mongoose.connect(process.env.DB_LOCAL).then(() => {
+mongoose.connect(process.env.TMS_ATLAS_URI).then(() => {
   console.log("Database connection is established.");
 });
 
